@@ -12,7 +12,7 @@ def check_price2():
     sel = '<div _ngcontent-serverapp-c24="" class="product-price-standard_price" style="margin-right: 20px;">1,199.-</div>'
     price = new.find(sel, first=True).text
     converted_price = int(price[0] + price[2:5])
-    if converted_price < 1500:
+    if converted_price < 1000:
         Test.send_mail(URL2)
 
     print(converted_price)
