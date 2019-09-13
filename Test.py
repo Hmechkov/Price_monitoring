@@ -6,7 +6,7 @@ def send_mail (link):
     server.starttls()
     server.ehlo()
 
-    server.login('hristiyan.mechkov@yahoo.com', '30$JustinianYahoo')
+    server.login('hristiyan.mechkov@yahoo.com', '30$JustinianYahoo1')
 
     subject = 'Price fell down!'
     body = f'Check the following link: {link}'

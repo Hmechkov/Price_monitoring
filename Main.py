@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 import Test
 import Additional_sites
-import Additional_sites2
+import Additional_sites2_new
 
 URL = 'https://www.technopolis.bg/bg/Mobilni-telefoni/Smartfon-GSM-SAMSUNG-GALAXY-A80-A805F-DS-BLACK/p/574270'
 
@@ -24,4 +24,4 @@ def check_price():
 
 check_price()
 Additional_sites.check_price1()
-import Additional_sites.check_price1()
+Additional_sites2_new.check_price2()
