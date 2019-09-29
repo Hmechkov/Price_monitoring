@@ -15,7 +15,7 @@ def check_price1():
     price = soup.find("p", class_="product-new-price").get_text().strip()
     converted_price = int(price[0] + price[2:5])
 
-    if converted_price < 1500:
+    if converted_price < 1000:
         Test.send_mail(URL1)
 
     print(converted_price)
