@@ -1,4 +1,8 @@
+import os
 import smtplib
+
+EMAIL_ADDRESS = os.environ.get('EMAIL')
+EMAIL_PASSWORD = os.environ.get('PASS')
 
 def send_mail (link):
     server = smtplib.SMTP('smtp.mail.yahoo.com', 587)
@@ -6,7 +10,7 @@ def send_mail (link):
     server.starttls()
     server.ehlo()
 
-    server.login('hristiyan.mechkov@yahoo.com', '30$JustinianYahoo1')
+    server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
     subject = 'Price fell down!'
     body = f'Check the following link: {link}'
